@@ -1,6 +1,6 @@
 {
   "name": "capacitor-plugin-bluetooth-transfer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "plugin for transfer file to device android",
   "main": "dist/plugin.js",
   "module": "dist/esm/index.js",

@@ -145,12 +145,8 @@ public class BluetoothFileTransfer extends Plugin {
         }
 
         if (requestCode == SEND_FILE_BLUETOOTH) {
-            Log.d(TAG,"Transfer completed.");
-            // Do something with the data
-            Toast.makeText(getContext(), "Transfer completed", Toast.LENGTH_LONG).show();
-            JSObject ret = new JSObject();
-            ret.put("value", "prueba");
-            savedCall.resolve(ret);
+            Log.d(TAG,"Transfer finished.");
+            savedCall.resolve();
         } else {
             Log.d(TAG,"handleOnActivityResult requestCode: "+Integer.toString(requestCode));
             Log.d(TAG,"handleOnActivityResult resultCode: "+Integer.toString(resultCode));
